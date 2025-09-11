@@ -1,10 +1,8 @@
-module example.com/lockbox/00_start
+module example.com/lockbox
 
-go 1.24.0
-
-toolchain go1.24.2
+go 1.22.0
 
 require (
-	golang.org/x/crypto v0.42.0 // indirect
-	golang.org/x/time v0.13.0 // indirect
+	golang.org/x/crypto v0.33.0
+	golang.org/x/time v0.10.0
 )
