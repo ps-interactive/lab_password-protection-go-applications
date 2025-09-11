@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+In the migration example, what change is required in the registration handler when switching from SHA-256 to BCrypt?
+{% /question %}
+{% option %}
+Remove JSON decoding because BCrypt hashes only accept plain query strings.
+{% /option %}
+{% option %}
+Hash the username instead of the password to reduce storage size.
+{% /option %}
+{% option answer=true %}
+Pass a cost value (e.g., defaultBCryptCost or query override) when calling bcrypt.GenerateFromPassword.
+{% /option %}
+{% option %}
+Switch HTTP method from POST to GET so the cost can be sent in the URL path.
+{% /option %}
+{% /choice %}

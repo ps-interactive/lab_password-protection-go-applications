@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Why is a separate limiter registry recommended for per-username limiting instead of reusing the IP registry?
+{% /question %}
+{% option %}
+Usernames must share a single global limiter to prevent starvation.
+{% /option %}
+{% option answer=true %}
+Independence avoids lock contention and reduces the likelihood of the rate limiters affecting response times.
+{% /option %}
+{% option %}
+The IP registry only stores integers, not strings.
+{% /option %}
+{% option %}
+Usernames require a leaky bucket while IPs require a fixed window algorithm.
+{% /option %}
+{% /choice %}

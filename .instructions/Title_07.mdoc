@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What combined defense is achieved by using both per-IP and per-username rate limiting on the login endpoint?
+{% /question %}
+{% option %}
+Guaranteed elimination of all false login failures.
+{% /option %}
+{% option answer=true %}
+Mitigation of distributed attacks (targeting one user from many IPs) and concentrated attacks (many attempts from one IP).
+{% /option %}
+{% option %}
+Automatic password reset after repeated failures.
+{% /option %}
+{% option %}
+Permanent banning of any IP after a single failed attempt.
+{% /option %}
+{% /choice %}

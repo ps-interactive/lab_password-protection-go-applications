@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Why does the verification function use bcrypt.CompareHashAndPassword instead of hashing the candidate password and comparing strings directly?
+{% /question %}
+{% option answer=true %}
+Because BCrypt embeds parameters (like cost and salt) in the stored hash and needs them during comparison.
+{% /option %}
+{% option %}
+Because hashing twice guarantees collision resistance.
+{% /option %}
+{% option %}
+Because CompareHashAndPassword randomly changes the stored hash to add entropy.
+{% /option %}
+{% option %}
+Because Go cannot compare two byte slices without a special BCrypt call.
+{% /option %}
+{% /choice %}

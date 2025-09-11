@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What is the primary security advantage of using a password hashing algorithm like BCrypt instead of a fast hash such as SHA-256 for storing user passwords?
+{% /question %}
+{% option %}
+Fast hashes simplify comparing user-entered passwords because they are shorter.
+{% /option %}
+{% option answer=true %}
+Increased computational cost slows brute-force attacks by making each guess more expensive.
+{% /option %}
+{% option %}
+BCrypt hashes can be trivially reversed if the user forgets their password.
+{% /option %}
+{% option %}
+Using BCrypt removes the need for TLS during user registration.
+{% /option %}
+{% /choice %}

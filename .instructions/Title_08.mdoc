@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Which description best matches the Token Bucket algorithm mentioned in the rate limiting overview?
+{% /question %}
+{% option %}
+Processes requests strictly at a fixed rate by queuing excess, smoothing bursts entirely.
+{% /option %}
+{% option %}
+Counts requests in fixed intervals; over-limit requests wait for the next window boundary.
+{% /option %}
+{% option answer=true %}
+Maintains a pool of replenished tokens; each request consumes one until empty, allowing short bursts.
+{% /option %}
+{% option %}
+Rejects all requests until an initial warm-up period fully refills the bucket.
+{% /option %}
+{% /choice %}

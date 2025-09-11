@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What is the main purpose of implementing per-IP rate limiting on all endpoints?
+{% /question %}
+{% option %}
+To guarantee every IP can only make one request per minute.
+{% /option %}
+{% option %}
+To eliminate the need for authentication on protected routes.
+{% /option %}
+{% option answer=true %}
+To slow or block high-volume automated attempts originating from a single network source.
+{% /option %}
+{% option %}
+To ensure requests from different paths are always processed sequentially.
+{% /option %}
+{% /choice %}
