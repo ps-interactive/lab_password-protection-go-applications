@@ -11,7 +11,7 @@ Remove JSON decoding because BCrypt hashes only accept plain query strings.
 Hash the username instead of the password to reduce storage size.
 {% /option %}
 {% option answer=true %}
-Pass a cost value (e.g., defaultBCryptCost or query override) when calling bcrypt.GenerateFromPassword.
+Pass a cost value (for example, defaultBCryptCost or query override) when calling bcrypt.GenerateFromPassword.
 {% /option %}
 {% option %}
 Switch HTTP method from POST to GET so the cost can be sent in the URL path.
